@@ -1,4 +1,5 @@
 import u12
+import time
 import numpy as np
 
 
@@ -9,5 +10,5 @@ for i in range(0,10,1):
         d.eAnalogOut(analogOut0=0,analogOut1=3)
     else:
         d.eAnalogOut(analogOut0=3,analogOut1=0)
-    pause(1)
+    time.sleep(1)
 d.eAnalogOut(analogOut0=0,analogOut1=0)
